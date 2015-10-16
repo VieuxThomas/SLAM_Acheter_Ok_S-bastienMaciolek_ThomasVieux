@@ -1,0 +1,3 @@
+<?
+include("accueil.php");
+?>
