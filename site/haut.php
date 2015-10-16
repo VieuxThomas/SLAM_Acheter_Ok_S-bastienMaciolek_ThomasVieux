@@ -22,6 +22,7 @@
 				<a href="produire.php" style="text-decoration:none" class="lien">Produire</a>
 				<a href="accueil.php" style="text-decoration:none" class="lien">Distribuer</a>
 				<input id="barreRecherche" type="text" placeHolder="  Rechercher"/>
+				<a href="panier.php" style="text-decoration:none;font-size:20px;color:yellow;"><img src="image/panier.png" style="width:50px"></a>
 			</p>
 		</div>
 
