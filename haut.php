@@ -1,3 +1,6 @@
+<?
+session_start();
+?>
 <!DOCTYPE HTML>
 
 <html lang="fr">
@@ -11,9 +14,34 @@
 	<body>
 		<div id='statut'> 
 			<span>
+				
 				<a href="" style="text-decoration:none;font-size:small" class="lien">&nbsp;&nbsp;| France</a>
+<?
+if ($_SESSION['actif']==0)
+{
+
+
+?>
 				<a href="inscription.php" style="text-decoration:none;font-size:small" class="lien">&nbsp;&nbsp;| Inscription</a>
+				
 				<a href="connexion.php" style="text-decoration:none;font-size:small" class="lien">&nbsp;&nbsp;| Connexion</a>
+<?
+}
+else 
+{
+echo $_SESSION['nom']," ", $_SESSION['prenom'];
+?>
+				<form method="POST" action="">
+				<input type="submit" value="déconnexion" name="btDeco"> 
+				</form>
+<?
+}
+if (isset($_POST['btDeco']))
+{
+	$_SESSION['actif']=0;
+
+}
+?>
 			</span>
 		</div>
 		<div id='barreMenu'>

@@ -1,5 +1,6 @@
 <?
-session_start();
+	include("haut.php");
+
 require"./connect.php";
 $maBase=connexion();
 
@@ -21,7 +22,6 @@ if ($nbLigne==1)
 	$_SESSION['nom']=$nom;
 	$_SESSION['actif']=1;
 
-	include("haut.php");
 ?>
 	<p><font color=white>Votre connexion a bien etait réaliser vous pouvez dorénavant parcourir notre site en toute liberter. </br>Bonne visite. </br></p>
 <a href="accueil.php"><font color=white>Retour sur la page d'acceuil</a>
