@@ -2,10 +2,10 @@
 function connexion ()
 {
 	//Déclaration des variables
-	$serveur="localhost";
+	$serveur="172.16.63.111";
 	$basededonnee="dbsmaciolekNewWorld";
-	$user="smaciolek";
-	$motdepasse="pheG45sp8";
+	$user="tvieux";
+	$motdepasse="OsjH12RRc";
 
 	//Connexion à la base de données
 	return mysqli_connect($serveur, $user, $motdepasse, $basededonnee);

@@ -9,7 +9,7 @@ include("haut.php");
 		<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>	
 		<title>New World</title>
-
+<form method="POST" action="gestionUtil.php">
 <div id="inscription">
 <fieldset>
 
@@ -30,7 +30,7 @@ include("haut.php");
 <img id="boucher" src="image/boucher.jpg">
 <p>
 <a href="inscription.php"><font color=white>Vous ne possédez pas de compte? inscrivez-vous ici !</font></a>
-
+</form>
 </div>
 <?php
 include("bas.php");
