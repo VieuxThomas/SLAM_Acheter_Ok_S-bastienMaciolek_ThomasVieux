@@ -1,0 +1,211 @@
+body
+{
+	background-image:url("./image/monde3.png");
+	background-position:center;
+	background-color:black;
+	background-repeat: no-repeat;
+	background-color:black;
+	width:100%;
+	height:100%;
+	margin-top:0%;
+	margin-bottom:0%;
+	margin-left:0%;
+	margin-right:0%;
+	display:block;
+}
+
+
+#message
+{
+	width:50%;
+	height:800px;
+	color:#007FFF;
+	font-size:40px;
+}
+#message p
+{
+	white-space: pre;
+	display:block;
+	position:relative;	
+	top:90px;
+	left:20px;
+	font-family:"Great Vibes",cursive;
+}
+
+
+#statut
+{
+	width:100%;
+	height:70%;
+	background-color:#2E2E2E;
+	color:white;
+	text-align:right;
+}
+
+#statut span 
+{
+	right:800px;
+	padding-right:100px;
+}
+
+#barreMenu
+{
+	width:100%;	
+	height:auto;
+	background-image:linear-gradient(grey, #1C1C1C);
+	color: white; 
+	font-size:40px;
+}
+#barreMenu p
+{
+	margin-top:0%;
+	margin-bottom:0%;
+	width:100%;
+}
+#barreMenu a
+{
+	height:auto;
+	margin-left:5%;
+	margin-right:5%;
+}
+#barreMenu a:hover
+{
+	background-image:linear-gradient(#1C1C1C,grey);
+}
+
+#barreRecherche
+{
+	width:10%;
+	border-radius:10px;
+	background-image:linear-gradient(black,grey);
+	color:white;
+	right:3px;
+}
+
+#basPage
+{
+	width:100%;
+	height:210px; 
+	background-image:linear-gradient(grey, #1C1C1C);
+	color: white;
+	margin-bottom:0%;
+}
+
+#menuBasPrincipal
+{
+	text-align:center;
+	margin-bottom:15px;
+	color:yellow;
+	text-decoration:none;
+}
+
+#menuBasPhrase
+{
+	text-decoration:none;
+	text-align:left;
+	margin-top:1px;
+	margin-bottom:1px;
+}
+
+.lien:visited
+{		
+	color:white;	
+}
+
+#jardinier
+{
+	display:block;
+	width:15%;
+	height:auto;
+	text-align:right;
+	position: absolute;
+	top:20%;
+	right:3%;
+}
+
+#boucher
+{
+	display:block;
+	width:15%;
+	height:auto;
+	text-align:right;
+	position: absolute;
+	bottom:30%;
+	right:3%; 
+}
+
+#gauche
+{
+	width:15%;
+	height:100%;
+	text-align:left;
+	float:left;
+	margin-left:6%;
+	margin-right:6%;
+	display:inline-block;
+}
+
+#centre
+{
+	width:15%;
+	height:100%;
+	text-align:left;
+	float:center;
+	margin-right:6%;
+	margin-left:15%;
+	display:inline-block;	
+}
+
+#droite
+{
+	width:15%;
+	height:100%;
+	text-align:left;
+	float:right;
+	margin-right:6%;
+	margin-left:6%;
+	display:inline-block;
+}
+
+#copy
+{
+	width:100%;
+	height:15px;
+	bottom:35px;
+	text-align:right;
+	font-size:small;
+	float:right;
+	color:white;
+	margin-top:0%;
+	margin-bottom:0%;
+	display:block;
+	position:relative;
+}
+
+#inscription
+{
+	width:50%;
+	height:800px;
+}
+
+#inscription p
+{
+	color:white;
+	font-size:15px;
+	display:block;
+	position:relative;	
+	top:15%;
+	left:3%;
+}
+
+legend
+{
+	color:white;
+}
+
+#contenu label 
+{
+	color:white;
+	width:150px;
+	display:inline-block;
+}
