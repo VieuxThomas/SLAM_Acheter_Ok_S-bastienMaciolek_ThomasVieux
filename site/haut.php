@@ -12,7 +12,8 @@
 		<div id='statut'> 
 			<span>
 				<a href="" style="text-decoration:none;font-size:small" class="lien">&nbsp;&nbsp;| France</a>
-				<a href="inscription.php" style="text-decoration:none;font-size:small" class="lien">&nbsp;&nbsp;| Connexion/Inscription</a>
+				<a href="inscription.php" style="text-decoration:none;font-size:small" class="lien">&nbsp;&nbsp;| Inscription</a>
+				<a href="connexion.php" style="text-decoration:none;font-size:small" class="lien">&nbsp;&nbsp;| Connexion</a>
 			</span>
 		</div>
 		<div id='barreMenu'>
@@ -23,6 +24,7 @@
 				<a href="accueil.php" style="text-decoration:none" class="lien">Distribuer</a>
 				<input id="barreRecherche" type="text" placeHolder="  Rechercher"/>
 				<a href="panier.php" style="text-decoration:none;font-size:20px;color:yellow;"><img src="image/panier.png" style="width:50px"></a>
+
 			</p>
 		</div>
 

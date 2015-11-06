@@ -88,6 +88,7 @@ body
 	height:210px; 
 	background-image:linear-gradient(grey, #1C1C1C);
 	color: white;
+	margin-bottom:0%;
 }
 
 #menuBasPrincipal
@@ -200,4 +201,11 @@ body
 legend
 {
 	color:white;
+}
+
+#contenu label 
+{
+	color:white;
+	width:150px;
+	display:inline-block;
 }
