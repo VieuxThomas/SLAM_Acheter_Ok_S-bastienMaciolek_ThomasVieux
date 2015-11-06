@@ -26,6 +26,8 @@ include("haut.php");
 </p>
 <input type="submit" name="btConnexion" id="btConnexion" value="Connexion">
 </fieldset>
+<img id="jardinier" src="image/jardinier.jpg">
+<img id="boucher" src="image/boucher.jpg">
 <p>
 <a href="inscription.php"><font color=white>Vous ne possédez pas de compte? inscrivez-vous ici !</font></a>
 
