@@ -2,6 +2,13 @@
 session_start();
 ?>
 <!DOCTYPE HTML>
+<?
+if (isset($_POST['btDeco']))
+{
+	$_SESSION['actif']=0;
+
+}
+?>
 
 <html lang="fr">
 	<head>
@@ -36,11 +43,7 @@ echo $_SESSION['nom']," ", $_SESSION['prenom'];
 				</form>
 <?
 }
-if (isset($_POST['btDeco']))
-{
-	$_SESSION['actif']=0;
 
-}
 ?>
 			</span>
 		</div>
