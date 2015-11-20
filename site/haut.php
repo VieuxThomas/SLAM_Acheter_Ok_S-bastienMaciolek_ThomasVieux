@@ -1,7 +1,19 @@
 <?
 session_start();
+if (!isset($_SESSION['actif']))
+{
+	$_SESSION['actif']=0;
+}
+
 ?>
 <!DOCTYPE HTML>
+<?
+if (isset($_POST['btDeco']))
+{
+	$_SESSION['actif']=0;
+
+}
+?>
 
 <html lang="fr">
 	<head>
@@ -36,11 +48,7 @@ echo $_SESSION['nom']," ", $_SESSION['prenom'];
 				</form>
 <?
 }
-if (isset($_POST['btDeco']))
-{
-	$_SESSION['actif']=0;
 
-}
 ?>
 			</span>
 		</div>
