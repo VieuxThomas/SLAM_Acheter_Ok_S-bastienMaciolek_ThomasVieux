@@ -47,7 +47,7 @@ if (isset($_POST['btDeco']))
 		<div id='barreMenu'>
 			<p>
 				<a href="accueil.php" style="text-decoration:none" class="lien">NW</a>
-				<a href="accueil.php" style="text-decoration:none" class="lien">Acheter</a>
+				<a href="acheter.php" style="text-decoration:none" class="lien">Acheter</a>
 				<a href="produire.php" style="text-decoration:none" class="lien">Produire</a>
 				<a href="accueil.php" style="text-decoration:none" class="lien">Distribuer</a>
 				<input id="barreRecherche" type="text" placeHolder="  Rechercher"/>
