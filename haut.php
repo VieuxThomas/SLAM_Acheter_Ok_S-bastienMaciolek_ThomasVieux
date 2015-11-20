@@ -1,5 +1,10 @@
 <?
 session_start();
+if (!isset($_SESSION['actif']))
+{
+	$_SESSION['actif']=0;
+}
+
 ?>
 <!DOCTYPE HTML>
 <?
