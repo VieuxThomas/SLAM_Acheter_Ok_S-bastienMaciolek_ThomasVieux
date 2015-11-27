@@ -12,8 +12,16 @@ body
 	margin-left:0%;
 	margin-right:0%;
 	display:block;
+	background-attachment:fixed;
 }
 
+footer
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
 #message
 {
@@ -32,6 +40,15 @@ body
 	font-family:"Great Vibes",cursive;
 }
 
+#messageConnexion
+{
+	color:#007FFF;
+	font-size:40px;
+	font-family:"Great Vibes",cursive;
+	white-space: pre;
+	display:block;
+	position:relative;
+}
 
 #statut
 {
@@ -208,4 +225,91 @@ legend
 	color:white;
 	width:150px;
 	display:inline-block;
+}
+
+#legume
+{
+	width:400px;
+	height:400px;
+}
+
+#fruit
+{
+	width:400px;
+	height:400px;
+}
+
+#charcuterie
+{
+	width:400px;
+	height:400px;
+}
+
+#fromage
+{
+	width:400px;
+	height:400px;
+}
+
+
+#typeProduit
+{
+	color:white;
+	display:block;
+	position:relative;	
+	left:20px;
+	text-align:center;
+	background-color:black;
+	font-size:200%;
+  	border: 2px white solid;
+	margin-right:40px;
+	margin-top:40px;
+	margin-bottom:40px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#produit
+{
+	color:white;
+	font-size:8px;
+	display:block;
+	position:relative;	
+	background-color:black;
+	font-size:100%;
+  	border: 2px white solid;
+	margin-right:15%;
+	margin-left:15%;
+	height:250px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#photoProduit
+{
+	width:200px;
+	height:200px;
+	float:left;
+	text-align:center;
+	margin-top:25px;
+	margin-bottom:25px;
+	margin-left:25px;
+}
+#produitNom
+{
+	margin-left:275px;
+	font-weight:bold;
+}
+
+#prixProduit
+{
+	margin-left:260px;
+}
+
+#qteProduit
+{
+	margin-left:260px;
+}
+
+#compteurQte
+{
+	margin-left:35px;
 }

@@ -21,7 +21,7 @@ include("haut.php");
 </p>
 <p>
 <label for "utilMdp"> Mot de passe : </label>
-<input type="text" name="utilMdp" id="utilMdp" placeholder="Votre Mot de passe">
+<input type="password" name="utilMdp" id="utilMdp" placeholder="Votre Mot de passe">
 <br>
 </p>
 <input type="submit" name="btConnexion" id="btConnexion" value="Connexion">

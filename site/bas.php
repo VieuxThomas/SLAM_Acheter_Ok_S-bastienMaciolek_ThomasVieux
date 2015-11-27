@@ -1,3 +1,5 @@
+		</body>
+		<footer>
 		<div id="basPage">
 			<div id="gauche">
 				<p id="menuBasPrincipal">Participer</p>
@@ -23,7 +25,6 @@
 			<div id="copy">
 				<p>@Copyright NW-2014	|    <a href="" class="lien">Nous contacter</a>	| <a href="" class="lien">mentions légales</a>
 			</div>
-		</div>
-	</body>
+		</footer>
 </html>
 

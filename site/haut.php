@@ -6,11 +6,12 @@ if (!isset($_SESSION['actif']))
 }
 
 ?>
-<!DOCTYPE HTML>
+<!doctype html>
 <?
 if (isset($_POST['btDeco']))
 {
 	$_SESSION['actif']=0;
+	header("location:accueil.php");
 
 }
 ?>
@@ -63,4 +64,3 @@ echo $_SESSION['nom']," ", $_SESSION['prenom'];
 
 			</p>
 		</div>
-
