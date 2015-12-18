@@ -6,7 +6,7 @@ $maBase=connexion();
 $utilisateur=$_POST['utilPseudo'];
 $MDP=$_POST['utilMdp'];
 $MDPCrypte=$MDP;
-$reqUtil="select utilPrenom,utilNom from utilisateur where utilMdp=password('$MDP') and utilPseudo='$utilisateur'";
+$reqUtil="select utilPrenom,utilNom,utilId from utilisateur where utilMdp=password('$MDP') and utilPseudo='$utilisateur'";
 
 $reqResultat=mysqli_query($maBase,$reqUtil);
 $nbLigne=mysqli_num_rows($reqResultat);
@@ -17,9 +17,11 @@ if ($nbLigne==1)
 	$resultatReq=mysqli_fetch_row($reqResultat);
 	$prenom=$resultatReq[0];
 	$nom=$resultatReq[1];
+	$id=$resultatReq[2];
 	$_SESSION['prenom']=$prenom;
 	$_SESSION['nom']=$nom;
 	$_SESSION['actif']=1;
+	$_SESSION['id']=$id;
 
 
 ?>

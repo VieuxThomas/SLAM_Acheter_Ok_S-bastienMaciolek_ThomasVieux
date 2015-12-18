@@ -8,7 +8,7 @@ body
 	width:100%;
 	height:100%;
 	margin-top:0%;
-	margin-bottom:0%;
+	margin-bottom:10%;
 	margin-left:0%;
 	margin-right:0%;
 	display:block;
@@ -17,10 +17,11 @@ body
 
 footer
 {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
+	height:16%;
 }
 
 #message
@@ -312,4 +313,28 @@ legend
 #compteurQte
 {
 	margin-left:35px;
+}
+
+#totalCout
+{
+	margin-left:260px;
+}
+
+#btAjout 
+{
+	margin-right:10px;
+	float:right;
+}
+
+#tbType
+{
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align:center;
+	color:white;
+	font-size:200%;
+}
+
+#tdVide
+{
+	width:200px;
 }

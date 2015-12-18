@@ -5,6 +5,13 @@ include ("haut.php");
 $_SESSION['produit']="FRUIT";
 ?>
 
+<script language="javascript">
+	function calcul(pNum){
+		document.all['montant'+pNum].value=document.all['prixProduit'+pNum].value*document.all['qteProduit'+pNum].value 
+			}
+</script>
+
+
 <?
 	$reqType="select typeproduitLibelle,typeproduitId from typeProduit natural join surtypeProduit where surtypeproduitId=1";
 	$curseurType=mysqli_query($maBase,$reqType);
@@ -32,17 +39,27 @@ $_SESSION['produit']="FRUIT";
 			$lotPrix=$leLot[0];
 			$lotQte=$leLot[1];
 			$lotMin=$leLot[2];
+			$prixMin=$lotMin*$lotPrix;
 ?>
 	<div id="produit">
+		<form method="POST" action="gestionPanier.php"> 
 		<img id="photoProduit" src="image/<? echo $produitPhoto ?>">
-		<p id="produitNom"><? echo $produit ?></p>
+		<p id="produitNom" name="produitNom<? echo $cptType ?>"><? echo $produit ?></p>
+		<input type="text" style="visibility:hidden; float:right"name="nomProduitCache<? echo $cptType ?>" value="<? echo $produit ?>"/>
+		<input type="hidden" name="prixProduit<? echo $cptType ?>" value="<? echo $lotPrix ?>">
 		<p id="prixProduit"><label>Prix unitaire : </label><? echo $lotPrix ?> €</p>
 		<p id="qteProduit"><label>Quantité restante : </label><? echo $lotQte; ?></p>
-		<input id="compteurQte" type="number" max="<? echo $lotQte ?>" min="<? echo $lotMin ?>" value="<? echo $lotMin ?>">
+		<input id="compteurQte" type="number" name="qteProduit<? echo $cptType ?>" onKeyup="calcul(<? echo $cptType ?>)" max="<? echo $lotQte ?>" min="<? echo $lotMin ?>" value="<? echo $lotMin ?>">
+		
+		
+		<p id="totalCout"><label>Total : </label><input type="text" name="montant<? echo $cptType ?>"value="<? echo $prixMin ?>"> €</p>
+
+		<input id="btAjout" type="submit" name="btAjout-<? echo $cptType ?> " value="Ajouter au panier">
+		</form> 
 
 	</div>
-<?
-			
+		<?
+		$cptType++;
 		}
 	}
 
