@@ -25,6 +25,11 @@ $maBase=connexion();
 				<p>
 					<label>Date de Naissance : </label><input type="date" name="utilDateNaiss" id="date" placeHolder="  ex : 1991-01-07">
 				</p>
+				<p>
+					<label>Type : </label>
+					Client : <input type='radio' name='utilType' id='utilType' checked="checked" value="Client">
+					Producteur : <input type='radio' name='utilType' id='utiltype' value="Producteur">
+				</p>
 		</fieldset>
 		<fieldset>
 			<legend>Coordonnées</legend>

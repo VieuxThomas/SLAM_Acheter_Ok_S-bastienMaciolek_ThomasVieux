@@ -11,7 +11,7 @@ function calcul(pNum){
 }
 </script>
 <?
-$reqType="select typeproduitLibelle,typeproduitId from typeProduit natural join surtypeProduit where surtypeproduitId=6";
+$reqType="select typeproduitLibelle,typeproduitId from typeProduit natural join surtypeProduit where surtypeproduitId=4";
 $curseurType=mysqli_query($maBase,$reqType);
 $cptType=0;
 $leProduitId="";

@@ -6,7 +6,7 @@ session_start();
 require "./connect.php";
 $maBase=connexion();
 
-//Enregistrement d'un nouvel utilisateur
+//Récupération des données
 $tabErreurs=array();
 $ok=true;
 
@@ -23,6 +23,7 @@ $ville=$tabLocalite[1];
 $telephone=$_POST['utilTelephone'];
 $mdpu=$_POST['utilMdp'];
 $mail=$_POST['utilMail'];
+$type=$_POST['utilType'];
 
 //Vérification du formulaire****************
 
@@ -86,7 +87,7 @@ $clef=md5(rand());
 if (isset($_POST['btValiderUtilisateur']) && $ok==true)
 {
 	//Ecriture de la requête
-	$requete="insert into utilisateur values ($numero,'$nom','$prenom','$pseudo','$dateNaiss','$rue','$CP','$ville','$telephone',password('$mdpu'),'$mail','Client','$clef',0)";
+	$requete="insert into utilisateur values ($numero,'$nom','$prenom','$pseudo','$dateNaiss','$rue','$CP','$ville','$telephone',password('$mdpu'),'$mail','$type','$clef',0)";
 	//Execution de la requete
 	$res=mysqli_query($maBase, $requete);
 }
@@ -140,54 +141,5 @@ include("haut.php");
 include("bas.php");
 
 //Fin affichage********************
-//########################################################################################################################
-
-//Enregistrement d'un nouveau produit et lot
-/*
-
-$localite=$_POST['lotPV'];
-$tabLocalite=explode(";",$localite);
-
-$libellee=$_POST['prodLibelle'];
-$prix=$_POST['lotId'];
-$quantite=$_POST['lotQuantite'];
-$prixLot=$_POST['lotPrix'];
-$dateRecolte=$_POST['lotDateRecolte'];
-$modeProduction=$_POST['lotModeProduction'];
-$masseMin=$_POST['lotMasseMin'];
-//Requete recherchant le plus grand identifiant existant et l'incrementer
-$req1Id="select max(lotId)+1 from lot";
-$req2Id="select max(prodId)+1 from produit";
-//Execution de la requete
-$resultat1Id=mysqli_query($maBase,$req1Id);
-$resultat2Id=mysqli_query($maBase,$req2Id);
-$tab1=mysqli_fetch_row($resultat1Id);
-$tab2=mysqli_fetch_row($resultat2Id);
-$numero1=$tab1[0];
-$numero2=$tab2[0];
-if (isset($_POST['btValiderLot']))
-{
-	//Ecriture de la requête
-	$requete1="insert into lot values ($numero1,$prix,NULL,$quantite,'$modeProduction','$dateRecolte',NULL,NULL,NULL,$masseMin,NULL,NULL)";
-	$requete2="insert into produit values ($numero2,'$prodLibelle',NULL)";
-	//Execution de la requete
-	$resultat1=mysqli_query($maBase, $requete1);
-	$resultat2=mysqli_query($maBase, $requete2);
-	include("haut.php");
-?>
-<div id='fond'>
-	<img id="jardinier" src="image/jardinier.jpg">
-	<img id="boucher" src="image/boucher.jpg">
-</div>
-<?
-include("bas.php");
-}
-//#########################################################################################################################
-
-//Requete : Recherche des categories.
-$requeteSTP="select surtypeproduitLibelle from surtypeProduit";
-$resultatSTP=mysqli_query($maBase,$requeteSTP);
-$tableauSTP=mysqli_fetch_row($resultatSTP);
-*/
 ?>
 

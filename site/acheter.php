@@ -1,10 +1,11 @@
 <?
 include("haut.php");
+//Si l'utilisateur n'est pas connecté
 if ($_SESSION['actif']==0)
 {
 ?>
-<div id='messageDesoleConnexion'>
-<p> Désolée, mais vous ne pouvez pas accéder a cette page si vous n'avez pas été connecter.
+<div id='message'>
+<p>Veuillez vous connecter pour pouvoir accéder à la page d'achat</p>
 </div>
 <?
 }
@@ -12,7 +13,7 @@ else
 {
 ?>
 <div id='messageConnexion'>
-	<p>Bienvenue dans acheter, ici vous trouverer tous les types de fruits et legumes de la région</p>
+	<p>Bienvenue dans acheter</p>
 </div>
 
 <table id="tbType" align="center">
@@ -34,7 +35,17 @@ else
 	<tr>
 		<td><a href="acheterViande.php"><img id="charcuterie" src="image/charcuterie.png"></a></td>
 		<td id="tdVide"></td>
-		<td><a href="acheterFromage.php"><img id="fromage" src="image/fromage.png"></a></p></td>
+		<td><a href="acheterLaitier.php"><img id="fromage" src="image/fromage.png"></a></p></td>
+	</tr>
+	<tr>
+		<td>Cereales</td>
+		<td id='tdVide'></td>
+		<td>Epiceries</td>
+	</tr>
+	<tr>
+		<td><a href='acheterCereales.php'><img id="cereales" src='image/cereales.png'></a></td>
+		<td id='tdVide'></td>
+		<td><a href='acheterEpicerie.php'><img id='epicerie' src='image/epicerie.png'></a></td>
 	</tr>
 </table>
 
@@ -44,6 +55,7 @@ else
 	Legume.style.widht=500px;
 	</script>
 <?
-	include("bas.php");
 }
+include("bas.php");
+
 ?>

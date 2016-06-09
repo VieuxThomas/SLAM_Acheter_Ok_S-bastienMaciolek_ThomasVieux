@@ -246,7 +246,19 @@ legend
 	height:400px;
 }
 
-#fromage
+#laitier
+{
+	width:400px;
+	height:400px;
+}
+
+#cereales
+{
+	width:400px;
+	height:400px;
+}
+
+#epicerie
 {
 	width:400px;
 	height:400px;
@@ -284,13 +296,18 @@ legend
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
+#supprimerPanier
+{
+	margin-left:35px;
+}
+
 #photoProduit
 {
 	width:200px;
 	height:200px;
 	float:left;
 	text-align:center;
-	margin-top:25px;
+	margin-top:10px;
 	margin-bottom:25px;
 	margin-left:25px;
 }
@@ -300,6 +317,17 @@ legend
 	font-weight:bold;
 }
 
+#photoProduitPanier
+{
+	width:200px;
+	height:200px;
+	float:left;
+	text-align:center;
+	margin-top:-25px;
+	margin-bottom:25px;
+	margin-left:25px;
+
+}
 #prixProduit
 {
 	margin-left:260px;
